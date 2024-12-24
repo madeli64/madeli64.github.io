@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 345px;
+    margin: 5px auto;
+}
+
+.planche {
+    display: grid;
+    grid-template-rows: repeat(10, 30px);
+    grid-template-columns: repeat(10, 30px);
+    gap: 5px;
+}
+
+.dir {
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-columns: repeat(3, 30px);
+    gap: 2px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    transition: background-color 0.5s, transform 1s;
+}
+
+.rotated { 
+    transform: rotate(360deg); /* Rotation transformation */ 
+}
+
+.messages {
+    background-color: burlywood;
+    height: 100px;
+    margin-top: 5px;
+    border: 2px solid maroon;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer .dir {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
